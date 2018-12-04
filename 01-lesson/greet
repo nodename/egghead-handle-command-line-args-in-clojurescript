@@ -1,0 +1,14 @@
+#!/usr/bin/env lumo
+  
+;; install lumo: https://github.com/anmonteiro/lumo
+
+;; greet.cljs
+;; invoke this program with your name as an argument
+;; and it will say hello to you
+
+(def user (first *command-line-args*))
+
+(defn greeting [user]
+  (str "Hello, " user "!"))
+
+(println (greeting user))
